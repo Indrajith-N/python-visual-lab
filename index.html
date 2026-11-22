@@ -1,21 +1,28 @@
 <!doctype html>
 <!--
   Python Visual Lab
-  Copyright (c) 2026 Indrajith N. All rights reserved.
+  Copyright (c) 2026 Indrajith. All rights reserved.
   Unauthorized copying, redistribution or modification of this software, via any medium, is prohibited without written permission.
   Python execution is provided by Pyodide (Mozilla Public License 2.0), which keeps its own license.
 -->
 <html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Python Visual Lab</title>
-<meta name="author" content="Jithu"/>
+<title>Python Visual Lab: see how Python runs, step by step</title>
+<meta name="author" content="Indrajith"/>
 <meta name="copyright" content="Copyright © 2026 Indrajith. All rights reserved."/>
-<meta name="description" content="Python Visual Lab: see how real Python runs your code, step by step."/>
+<meta name="description" content="Python Visual Lab runs real Python in your browser and animates every statement: variables, loops, functions and the call stack."/>
+<meta name="theme-color" content="#0e1116"/>
+<meta property="og:type" content="website"/><meta property="og:title" content="Python Visual Lab"/>
+<meta property="og:description" content="Run real Python in your browser and watch how every statement executes, step by step."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1116'/%3E%3Ccircle cx='28' cy='28' r='14' fill='none' stroke='%234dd0e1' stroke-width='6'/%3E%3Cpath d='M39 39l14 14' stroke='%234dd0e1' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <style>
+  html,body{background:#0e1116;margin:0}
   #root{height:calc(100% - 18px)!important}
+  .boot{height:100vh;display:flex;align-items:center;justify-content:center;color:#8b98a9;font:18px 'Atkinson Hyperlegible',system-ui,sans-serif}
   .copyright{position:fixed;left:0;right:0;bottom:0;height:18px;text-align:center;font:12px/18px 'Atkinson Hyperlegible',system-ui,sans-serif;color:#6b7a90;pointer-events:none;user-select:none}
 </style>
-</head><body><div id="root"></div>
+</head><body><div id="root"><div class="boot">Loading Python Visual Lab…</div></div>
+<noscript><div class="boot">Python Visual Lab needs JavaScript. Please enable it in your browser.</div></noscript>
 <div class="copyright">© 2026 Indrajith. All rights reserved.</div>
 <script type="module" src="/src/main.jsx"></script></body></html>
